@@ -45,7 +45,8 @@ class ViewController: UIViewController {
         dvc.login = loginTF.text
     }
     @IBAction func unwind(segue: UIStoryboardSegue){
-        
+        self.loginTF.text = ""
+        self.passwordTF.text = ""
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
